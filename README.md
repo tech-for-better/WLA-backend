@@ -18,6 +18,7 @@ exists in a many-many relation with career_path
 | description | rich text | F | T |
 | video_url | varchar | F | F |
 | lmi_code | varchar |F | F |
+| color | varchar |T | T |
 
 ### course
 exists in a many-many relation with career_path
