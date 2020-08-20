@@ -10,16 +10,40 @@
   },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "richtext"
     },
-    "startDate": {
-      "type": "datetime"
+    "link": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "online_only": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "start_date": {
+      "type": "date"
     },
     "price": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "career_paths": {
+      "via": "courses",
+      "collection": "career-path",
+      "dominant": true
+    },
+    "modules": {
+      "via": "course",
+      "collection": "module"
     }
   }
 }

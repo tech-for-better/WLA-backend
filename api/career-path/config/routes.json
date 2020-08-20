@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/career-paths",
+      "handler": "career-path.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/career-paths/count",
+      "handler": "career-path.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/career-paths/:id",
+      "handler": "career-path.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/career-paths",
+      "handler": "career-path.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/career-paths/:id",
+      "handler": "career-path.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/career-paths/:id",
+      "handler": "career-path.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

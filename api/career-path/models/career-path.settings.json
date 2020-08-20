@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "career_paths",
+  "info": {
+    "name": "career_path"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "lmi_code": {
+      "type": "string"
+    },
+    "courses": {
+      "collection": "course",
+      "via": "career_paths"
+    },
+    "icon_url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
