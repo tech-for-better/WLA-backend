@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "career_paths",
   "info": {
-    "name": "career_path"
+    "name": "careerPath"
   },
   "options": {
     "increments": true,
