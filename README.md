@@ -9,7 +9,7 @@ There are three tables. career_path and course have a many-many relation. course
 These settings are encoded in files found at `api/*/models/*.settings.json` (where * represents the name of each table). Those files should be taken as the final source of truth. 
 
 ### career_path
-exists in a many-many relation with career_path
+exists in a many-many relation with course
 
 |field | type | unique | required |
 |-|-|-|-|
@@ -19,6 +19,15 @@ exists in a many-many relation with career_path
 | video_url | varchar | F | F |
 | lmi_code | varchar |F | F |
 | color | varchar |T | T |
+
+### provider
+Exists in a one-to-many relation with course
+
+|field | type | unique | required |
+|-|-|-|-|
+| id | unique primary key | T | F |
+| name | varchar | T | T |
+| address | varchar (long) | T | F |
 
 ### course
 exists in a many-many relation with career_path

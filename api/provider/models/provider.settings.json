@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "providers",
+  "info": {
+    "name": "Provider"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "courses": {
+      "collection": "course",
+      "via": "provider"
+    },
+    "Address": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

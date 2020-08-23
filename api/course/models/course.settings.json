@@ -44,6 +44,10 @@
     "modules": {
       "via": "course",
       "collection": "module"
+    },
+    "provider": {
+      "via": "courses",
+      "model": "provider"
     }
   }
 }
