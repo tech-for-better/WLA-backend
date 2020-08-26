@@ -2,6 +2,7 @@
   "name": "wla-be",
   "private": true,
   "version": "0.1.0",
+  "main": "server.js",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
