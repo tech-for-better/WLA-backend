@@ -9,7 +9,7 @@
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
@@ -18,8 +18,8 @@
       "collection": "course",
       "via": "provider"
     },
-    "Address": {
-      "type": "text",
+    "postcode": {
+      "type": "string",
       "required": true
     }
   }
