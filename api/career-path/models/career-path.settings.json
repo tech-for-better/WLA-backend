@@ -25,8 +25,8 @@
       "type": "string"
     },
     "courses": {
-      "collection": "course",
-      "via": "career_paths"
+      "via": "career_paths",
+      "collection": "course"
     },
     "icon_url": {
       "type": "string",

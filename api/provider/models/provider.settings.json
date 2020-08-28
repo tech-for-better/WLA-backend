@@ -15,8 +15,8 @@
       "unique": true
     },
     "courses": {
-      "collection": "course",
-      "via": "provider"
+      "via": "provider",
+      "collection": "course"
     },
     "postcode": {
       "type": "string",

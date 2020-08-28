@@ -10,8 +10,8 @@
   },
   "attributes": {
     "course": {
-      "model": "course",
-      "via": "modules"
+      "via": "modules",
+      "model": "course"
     },
     "order": {
       "type": "integer"

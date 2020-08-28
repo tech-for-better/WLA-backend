@@ -21,9 +21,6 @@
       "required": true,
       "unique": false
     },
-    "postcode": {
-      "type": "string"
-    },
     "online_only": {
       "type": "boolean",
       "default": false,
@@ -32,22 +29,22 @@
     "start_date": {
       "type": "date"
     },
-    "price": {
-      "type": "string",
-      "required": true
-    },
     "career_paths": {
-      "via": "courses",
       "collection": "career-path",
+      "via": "courses",
       "dominant": true
     },
     "modules": {
-      "via": "course",
-      "collection": "module"
+      "collection": "module",
+      "via": "course"
     },
     "provider": {
-      "via": "courses",
-      "model": "provider"
+      "model": "provider",
+      "via": "courses"
+    },
+    "total_price": {
+      "type": "integer",
+      "required": true
     }
   }
 }
