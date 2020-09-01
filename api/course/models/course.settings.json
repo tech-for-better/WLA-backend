@@ -30,8 +30,8 @@
       "type": "date"
     },
     "career_paths": {
-      "collection": "career-path",
       "via": "courses",
+      "collection": "career-path",
       "dominant": true
     },
     "modules": {
